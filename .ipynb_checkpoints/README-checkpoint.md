@@ -21,20 +21,7 @@ Each file is intended to run independently and both provide a full workflow from
 ```bash
 pip install -r requirements.txt
 ```
-
-2. **Download file from releases**
-`recipe_embeddings.npy` can be found under releases as it is too big to be stored directly in the repository.
-- Download `recipe_embeddings.npy` from this release: Pantry-Pal model artifacts (embeddings file)
-- Place it in the following folder inside the project:
-```bash
-flan-t5/recipe_model/final_model/
-```
-- The final path should look like:
-```
-flan-t5/recipe_model/final_model/recipe_embeddings.npy
-```
-
-3. **Run the notebooks**
+2. **Run the notebooks**
 
 - `lstm-model-training.ipynb` will train the LSTM model.
 
