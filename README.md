@@ -15,6 +15,29 @@ The repository is organised into two main scripts:
 
 Each file is intended to run independently and both provide a full workflow from raw data to model outputs.
 
+## Repository Structure
+
+```
+Pantry-Pal/
+│  
+├── lstm/  
+│   └── lstm-model-training.ipynb            # lstm model training
+│   └── ckpt_20.weights.h5                   # weights of saved model
+│   └── recipe_model.h5                      # saved model in h5 format
+│   └── recipe_model.keras                   # saved model in keras format
+│  
+├── flan-t5/  
+│   ├── recipe_model/  
+│   │   └── final_model/                     # drop-in path for embedding file and saved models
+│   │       └── …                            # weights of saved model
+│   └── flan-t5-model-training.ipynb         # FLAN-T5 model and retrieval training
+│  
+├── .gitignore  
+├── README.md  
+└── requirements.txt                          # Python dependencies  
+
+```
+
 ## Setup Instructions
 
 1. **Install dependencies**
